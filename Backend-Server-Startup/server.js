@@ -4,13 +4,14 @@
 // Make Server using Express
 const express = require('express');
 
-const app = express();
+const app = express(); // Server create the instance
 
-// Start the server
+// For Start the server
 app.listen(3000)
 
 // Make some routes and send the response to the client
 app.get('/', (req, res)=>{
+    //req is used to get the request from the frontend and res is used to send the response to the frontend
     res.send('Hello World')
 })
 
